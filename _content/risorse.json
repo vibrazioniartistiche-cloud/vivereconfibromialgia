@@ -1,0 +1,18 @@
+{
+  "risorse": [
+    {
+      "icona": "📞",
+      "titolo": "Telefono Amico",
+      "descrizione": "Ascolto gratuito e anonimo per chi attraversa momenti difficili. Disponibile tutti i giorni.",
+      "link": "https://www.telefonoamico.it",
+      "categoria": "Supporto psicologico"
+    },
+    {
+      "icona": "🌬️",
+      "titolo": "Insight Timer",
+      "descrizione": "App gratuita con migliaia di meditazioni guidate. La uso ogni mattina.",
+      "link": "https://insighttimer.com",
+      "categoria": "Pratiche di benessere"
+    }
+  ]
+}

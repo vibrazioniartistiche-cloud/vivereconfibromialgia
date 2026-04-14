@@ -1,0 +1,36 @@
+{
+  "libri": [
+    {
+      "titolo": "Il corpo accusa il colpo",
+      "autore": "Bessel van der Kolk",
+      "descrizione": "Un libro fondamentale sulla relazione tra trauma e corpo. Van der Kolk spiega in modo accessibile come il trauma vive nelle nostre cellule e come possiamo iniziare a liberarcene. È stato uno dei libri più importanti del mio percorso.",
+      "copertina": "",
+      "link": "https://www.ibs.it/libri/van-der-kolk",
+      "categoria": "Guarigione"
+    },
+    {
+      "titolo": "Donne che corrono coi lupi",
+      "autore": "Clarissa Pinkola Estés",
+      "descrizione": "Un testo poetico e potente sulla psicologia femminile attraverso fiabe e miti. Parla di istinto, di creatività ferita e di come ritrovare la natura selvatica che è in ognuna di noi. L'ho letto tre volte.",
+      "copertina": "",
+      "link": "",
+      "categoria": "Psicologia"
+    },
+    {
+      "titolo": "La stanza delle meraviglie",
+      "autore": "Suggerimento: inserisci il tuo libro preferito",
+      "descrizione": "Sostituisci questo con uno dei tuoi libri preferiti! Vai nel pannello admin e modifica la lista libri con i titoli che vuoi consigliare.",
+      "copertina": "",
+      "link": "",
+      "categoria": "Narrativa"
+    },
+    {
+      "titolo": "Il potere del momento presente",
+      "autore": "Eckhart Tolle",
+      "descrizione": "Un classico sulla presenza e la consapevolezza. Non è facile da leggere tutto d'un fiato, ma ogni pagina ha qualcosa da offrire. L'ho tenuto sul comodino per mesi.",
+      "copertina": "",
+      "link": "",
+      "categoria": "Spiritualità"
+    }
+  ]
+}
