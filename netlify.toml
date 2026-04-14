@@ -1,7 +1,7 @@
 [build]
   publish = "."
 
-# CMS Decap - deve venire prima del catch-all
+# CMS Decap
 [[redirects]]
   from = "/admin"
   to = "/admin/"
@@ -11,12 +11,6 @@
   from = "/admin/*"
   to = "/admin/index.html"
   status = 200
-
-# Reindirizzamento per pagine 404 (catch-all)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 404
 
 # Headers di sicurezza
 [[headers]]
