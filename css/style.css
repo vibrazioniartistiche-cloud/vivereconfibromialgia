@@ -474,3 +474,511 @@ header nav a.attivo {
 blockquote {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(1.4rem, 3vw, 
+2rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--viola);
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+  color: var(--oro);
+  font-size: 1.2em;
+}
+
+.citazione-fonte {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--testo-chiaro);
+  font-size: 0.85rem;
+}
+
+/* ========================
+   ABOUT STRIP
+======================== */
+.about-strip {
+  padding: 5rem 2rem;
+  background: var(--bianco);
+}
+
+.about-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image-placeholder {
+  aspect-ratio: 4/5;
+  background: linear-gradient(135deg, var(--viola-pallido), var(--viola-medio));
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--bianco);
+  box-shadow: 0 20px 60px var(--ombra-forte);
+  overflow: hidden;
+}
+
+.about-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.strip-chi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.strip-chi-img {
+  aspect-ratio: 4/5;
+  background: linear-gradient(135deg, var(--viola-pallido), var(--viola-medio));
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--bianco);
+  box-shadow: 0 20px 60px var(--ombra-forte);
+}
+
+.strip-chi-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========================
+   PAGE HEADER
+======================== */
+.page-header,
+.page-hero {
+  padding: 8rem 2rem 4rem;
+  background: linear-gradient(160deg, var(--viola-scuro), var(--viola));
+  text-align: center;
+  color: var(--bianco);
+}
+
+.page-header h1,
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.page-header h1 em,
+.page-hero h1 em { color: var(--oro-chiaro); }
+
+.page-header p,
+.page-hero p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--oro);
+  margin-bottom: 1rem;
+}
+
+/* ========================
+   CONTENT PAGE
+======================== */
+.content-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.content-page h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--viola);
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.content-page p {
+  color: var(--testo-medio);
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.content-page a {
+  color: var(--viola-medio);
+}
+
+/* ========================
+   FILTRI BLOG
+======================== */
+.filtri {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.filtro-btn {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid var(--bordo);
+  background: var(--bianco);
+  color: var(--testo-medio);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.filtro-btn:hover,
+.filtro-btn.attivo {
+  background: var(--viola);
+  color: var(--bianco);
+  border-color: var(--viola);
+}
+
+/* ========================
+   FORM
+======================== */
+.form-gruppo { margin-bottom: 1.5rem; }
+
+.form-gruppo label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--testo-medio);
+  margin-bottom: 0.5rem;
+}
+
+.form-gruppo input,
+.form-gruppo textarea,
+.form-gruppo select {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--bordo);
+  background: var(--bianco);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  color: var(--testo);
+  border-radius: 2px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.form-gruppo input:focus,
+.form-gruppo textarea:focus {
+  border-color: var(--viola);
+}
+
+.form-gruppo textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-griglia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* ========================
+   LIBRI
+======================== */
+.libro-card {
+  background: var(--bianco);
+  border: 1px solid var(--bordo);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: flex-start;
+}
+
+.libro-card:hover {
+  box-shadow: 0 8px 30px var(--ombra);
+  border-color: var(--oro);
+}
+
+.libro-copertina {
+  width: 90px;
+  min-width: 90px;
+  aspect-ratio: 2/3;
+  background: linear-gradient(135deg, var(--viola), var(--viola-medio));
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 4px 4px 12px var(--ombra);
+}
+
+.libro-copertina img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.libro-info { flex: 1; }
+
+.libro-titolo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--viola);
+  margin-bottom: 0.25rem;
+}
+
+.libro-autore {
+  font-size: 0.85rem;
+  color: var(--testo-chiaro);
+  margin-bottom: 0.75rem;
+}
+
+.libro-desc {
+  font-size: 0.9rem;
+  color: var(--testo-medio);
+  margin-bottom: 1rem;
+}
+
+.libro-acquista {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--oro-scuro);
+  text-decoration: none;
+  border-bottom: 1px solid var(--oro);
+}
+
+/* ========================
+   RISORSE
+======================== */
+.risorsa-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-left: 3px solid var(--oro);
+  background: var(--bianco);
+  margin-bottom: 1rem;
+  border-radius: 0 4px 4px 0;
+  transition: all 0.2s;
+}
+
+.risorsa-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px var(--ombra);
+}
+
+.risorsa-icona { font-size: 1.5rem; flex-shrink: 0; }
+.risorsa-titolo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--viola);
+}
+
+.risorsa-desc {
+  font-size: 0.87rem;
+  color: var(--testo-medio);
+}
+
+.risorsa-link {
+  font-size: 0.78rem;
+  color: var(--oro-scuro);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ========================
+   NEWSLETTER
+======================== */
+.newsletter {
+  background: var(--viola);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--bianco);
+}
+
+.newsletter h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  max-width: 480px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.1);
+  color: var(--bianco);
+  border-radius: 2px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.newsletter-form input::placeholder { color: rgba(255,255,255,0.5); }
+.newsletter-form input:focus { border-color: var(--oro); }
+
+/* ========================
+   FOOTER
+======================== */
+footer,
+.footer {
+  background: var(--viola-scuro);
+  color: rgba(255,255,255,0.8);
+  padding: 3rem 2rem 1.5rem;
+}
+
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: var(--bianco);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.footer-logo img {
+  height: 52px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer-desc {
+  font-size: 0.87rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.65);
+}
+
+.footer-col h4,
+.footer-titolo {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--oro);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer-col a,
+.footer-link {
+  display: block;
+  font-size: 0.87rem;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover,
+.footer-link:hover { color: var(--oro-chiaro); }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.footer-bottom a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+
+.footer-bottom a:hover { color: var(--oro-chiaro); }
+
+/* ========================
+   POST SINGOLO
+======================== */
+.post-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.post-content h2,
+.post-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--viola);
+  margin: 2rem 0 1rem;
+}
+
+.post-content p {
+  margin-bottom: 1.25rem;
+  color: var(--testo-medio);
+}
+
+.post-content img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+/* ========================
+   ANIMAZIONI
+======================== */
+.fade-in,
+.fade-up {
