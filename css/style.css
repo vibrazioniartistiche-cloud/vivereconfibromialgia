@@ -982,3 +982,121 @@ footer,
 ======================== */
 .fade-in,
 .fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.7s ease;
+}
+
+.fade-in.visible,
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================
+   BADGE
+======================== */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--viola-pallido);
+  color: var(--viola-medio);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+/* ========================
+   SCROLL TOP
+======================== */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 500;
+  width: 44px;
+  height: 44px;
+  background: var(--viola);
+  color: var(--bianco);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-top.visibile {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-top:hover { background: var(--oro); }
+
+/* ========================
+   MESSAGGIO SUCCESSO
+======================== */
+.msg-successo {
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  color: #2e7d32;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  display: none;
+  font-size: 0.9rem;
+}
+
+.msg-successo.visibile { display: block; }
+
+/* ========================
+   RESPONSIVO
+======================== */
+@media (max-width: 900px) {
+  .griglia-3,
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  .strip-chi,
+  .about-grid { grid-template-columns: 1fr; text-align: center; }
+  .strip-chi-img,
+  .about-image-placeholder { max-width: 300px; margin: 0 auto; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .divider,
+  .divisore-oro { margin: 1rem auto 2rem; }
+}
+
+@media (max-width: 640px) {
+  .griglia-3,
+  .griglia-2,
+  .blog-grid { grid-template-columns: 1fr; }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 70px; left: 0; right: 0;
+    background: var(--crema);
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 1px solid var(--bordo);
+    padding: 1rem 0;
+  }
+  header nav.aperto { display: flex; }
+  header nav a {
+    display: block;
+    padding: 0.75rem 2rem;
+    border-bottom: none !important;
+  }
+  .menu-toggle { display: flex; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .form-griglia { grid-template-columns: 1fr; }
+  .libro-card { flex-direction: column; }
+  .libro-copertina {
+    width: 100%;
+    min-width: unset;
+    aspect-ratio: 16/9;
+  }
+}
